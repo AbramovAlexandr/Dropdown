@@ -1,0 +1,7 @@
+.modal{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    z-index: 3;
+}
