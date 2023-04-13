@@ -1,8 +1,9 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext} from 'react'
 import './DropDown.css'
-import { DropList } from '../DropList/DropList'
 import { Context } from '../../Utils/context/context'
 import { Modal } from '../../Modal/Modal'
+import arrowUp from '../../assets/Arrow/up-arrow.png'
+import arrowDown from '../../assets/Arrow/down-arrow.png'
 
 export const DropDown = () => {
     const {countiesSelected} = useContext(Context)
@@ -18,13 +19,13 @@ export const DropDown = () => {
           <div className='item-list'>
               {countiesSelected.map((country, key) => <div className='countries' key={key}>
                 <p>
-                  <img src={country.image}/>
+                  <img aly='#' src={country.image}/>
                   {country.value}
                   <button onClick={() => removeCountry(country.id)}>{`[x]`}</button>
                 </p>
               </div> )}
           </div>
-          {isDrop ? <button onClick={toggleShow} className='btnShow'>↑</button> : <button onClick={toggleShow} className='btnShow'>↓</button>}
+          {isDrop ? <button onClick={toggleShow} className='btnShow'><img src={arrowUp}/></button> : <button onClick={toggleShow} className='btnShow'><img src={arrowDown}/></button>}
       </div>
       <Modal isDrop={isDrop}/>
     </div>

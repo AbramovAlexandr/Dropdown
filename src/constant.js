@@ -1,9 +1,9 @@
-import germany from './assets/germany.png'
-import russua from './assets/russia.png'
-import italy from './assets/italy.png'
-import poland from './assets/poland.png'
-import america from './assets/united-states-of-america.png'
-import spanish from './assets/spain.png'
+import germany from './assets/Country/germany.png'
+import russua from './assets/Country/russia.png'
+import italy from './assets/Country/italy.png'
+import poland from './assets/Country/poland.png'
+import america from './assets/Country/united-states-of-america.png'
+import spanish from './assets/Country/spain.png'
 export const countryMock = [
     {
         id: 0,

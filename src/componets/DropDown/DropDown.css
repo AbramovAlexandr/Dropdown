@@ -25,6 +25,7 @@
     display: flex;
     overflow: auto;
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .countries{
@@ -55,10 +56,29 @@
     
 }
 
+::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  .item-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+  }
+  
+  .item-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #42b3d2, #005bea);
+  }
+
 .btnShow{
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     font-size: 20px;
+}
+
+.btnShow img{
+    width: 25px;
 }
